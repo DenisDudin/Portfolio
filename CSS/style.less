@@ -1,21 +1,30 @@
-// compress: false
+// compress: true
 @import "vars";
 
 html{
-	font-size: 15px;
+    font-size: 15px;
 }
 
 body{
-	font-family: 'Roboto', sans-serif;
-	font-size: 1rem;
-	color: @black;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: @black;
 }
 
-*, *:before, *:after {
-	box-sizing: border-box;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
-/*----------Blocks----------*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*---------Blocks--------*/
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/user";
+@import "blocks/nav";
+@import "blocks/intro";
