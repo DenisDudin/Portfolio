@@ -1,0 +1,84 @@
+// main: ../style.less
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.articles_col {
+    width: 33.333%;
+    padding: 1rem;
+}
+
+.articles_item {
+    margin-bottom: 2rem;
+}
+
+.articles_header {
+    position: relative;
+    margin-bottom: 1.3rem;
+}
+
+.articles_content {
+    margin-bottom: 2rem;
+}
+
+.articles_date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+
+    background-color: @black;
+
+    text-align: center;
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.4rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.articles_photo {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
+.articles_title {
+    margin-bottom: 0.6rem;
+
+    font-size: 1.2rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.articles_cat {
+    margin-bottom: 1.5rem;
+
+    font-size: 0.8rem;
+    color: @black;
+    text-transform: uppercase;
+}
+
+.articles_text {
+    font-size: .8rem;
+    color: @gray;
+    font-weight: 300;
+    line-height: 2;
+}

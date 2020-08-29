@@ -1,63 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
-    <meta name="vieport" content="width=device-width, initial-scale=1">
-    <title>Dobry Den</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Denis Dudin</title>
 </head>
 
 <body>
-
+    <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-
+            <div class="header_inner">
                 <div class="user">
-                    <div class="user__avatar">
-                        <img src="https://placehold.it/57/333" alt="">
-                    </div>
-                    <div class="user__content">
-                        <div class="user__name">Денис <br> Дудин</div>
-                        <div class="user__prof">Web-разработчик</div>
+                    <div class="user_avatar"> <img src="https://placehold.it/57/333" alt=""> </div>
+                    <div class="user_content">
+                        <div class="user_name"> Денис
+                            <br>Дудин
+                        </div>
+                        <div class="user_prof">Веб-разработчик</div>
                     </div>
                 </div>
-
-                <nav class="nav">
-                    <a class="nav__link" href="#">work</a>
-                    <a class="nav__link" href="#">about me</a>
-                    <a class="nav__link" href="#">blog</a>
-                    <a class="nav__link" href="#">contact</a>
-                    <a class="nav__link nav__link--btn" href="#">hire me</a>
-
-                </nav>
-
+                <nav class="nav"> <a class="nav_link" href="#">work</a> <a class="nav_link" href="#">about me</a> <a class="nav_link" href="#">blog</a> <a class="nav_link" href="#">contact</a> <a class="nav_link  nav_link-btn" href="#">hire me</a> </nav>
             </div>
         </div>
     </header>
-
-
+    <!-- Intro -->
     <section class="intro">
         <div class="container">
-
-            <div class="intro__inner">
-                 <div class="intro__content">
-                     <h2 class="intro__subtitle">Hello i'm</h2>
-                     <h1 class="intro__title">Denis Dudin</h1>
-                     <div class="intro__text">Web-designer</div>
-                 </div>
-
-                 <div class="social">
-                     <a class="social__link" href="#">
-                         <img src="images/telegram.svg" alt="">
-                     </a>
-                 </div>
-                 <div class="intro__photo"></div>
-
-            </div>
-
+            <div class="intro_inner">
+                <div class="intro_content">
+                    <h2 class="intro_subtitle">Hello i'm</h2>
+                    <h1 class="intro_title">Denis Dudin</h1>
+                    <div class="intro_text"> Web developer </div>
+                    <div class="social">
+                        <a class="social_link" href="#">
+                            <img src="images/vk.svg" widtx=25px height=25px alt="">
+                        </a>
+                        <a class="social_link" href="#">
+                            <img src="images/instagram.svg" widtx=25px height=25px alt="">
+                        </a>
+                        <a class="social_link" href="#">
+                            <img src="images/telegram.svg" widtx=25px height=25px alt="">
+                        </a>
+                        <a class="social_link" href="#">
+                            <img src="images/gmail.svg" widtx=25px height=25px alt="">
+                        </a>
+                        <a class="social_link" href="#">
+                            <img src="images/github.svg" widtx=25px height=25px alt="">
+                        </a>
+                    </div> <a class="btn" href="#">HIRE ME</a>
+                    <button class="btn" type="button">SEE MY RESUME</button>
+                </div> <img class="intro_photo" src="images/photo.png" alt=""> </div>
+            <!-- /.intro__inner -->
         </div>
+        <!-- /.container -->
     </section>
+    <!-- Works -->
+    <div class="works">
+        <div class="container">
+            <div class="works_nav"> <a class="works_nav-link" href="#">All</a> <a class="works_nav-link" href="#">App</a> <a class="works_nav-link" href="#">Websites</a> <a class="works_nav-link" href="#">Interaction</a> </div>
+            <div class="portfolio">
+                <div class="portfolio_col">
+                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">category</div>
+                            <div class="work_title"> Project title
+                                <time class="work_date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col">
+                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">category</div>
+                            <div class="work_title"> Project title
+                                <time class="work_date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col">
+                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">category</div>
+                            <div class="work_title"> Project title
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col">
+                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">category</div>
+                            <div class="work_title"> Project title
+                                <time class="work_date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col">
+                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">category</div>
+                            <div class="work_title"> Project title
+                                <time class="work_date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_col">
+                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
+                        <div class="work_content">
+                            <div class="work_cat">category</div>
+                            <div class="work_title"> Project title
+                                <time class="work_date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.portfolio -->
+            <div class="text-center"> <a class="btn  btn-sm" href="#">LOAD MORE WORK</a> </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.works -->
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="about_inner">
+                <div class="about_photo"> <img class="img" src="images/avatar.jpg" alt=""> </div>
+                <div class="about_content">
+                    <h3 class="about_title">ABOUT ME</h3>
+                    <h2 class="about_bigtitle">WHO AM I</h2>
+                    <div class="about_text">
+                        <p>Первый абзац и очень много текста</p>
+                        <p>Второй абзац и очень много текста</p>
+                        <p>Третий абзац и очень много текста</p>
+                    </div> <a class="btn" href="#">HIRE ME</a>
+                    <button class="btn" type="button">SEE MY RESUME</button>
+                </div>
+                <!-- /.about__content -->
+            </div>
+            <!-- /.about__inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- reviews -->
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews_item">
+                <div class="reviews_text">
+                    <p> text text text</p>
+                    <p> still still still</p>
+                </div>
+                <div class="reviews_author"> <img class="reviews_photo" src="https://placehold.it/103/333:" alt="">
+                    <div class="reviews_name">Ты</div>
+                    <div class="reviews_company">Твоя компания</div>
+                    <div class="reviews_rating"> <img src="images/star.svg" width="13" height="13" alt="" class="reviews_star"> <img src="images/star.svg" width="13" height="13" alt="" class="reviews_star"> <img src="images/star.svg" width="13" height="13" alt="" class="reviews_star"> <img src="images/star.svg" width="13" height="13" alt="" class="reviews_star"> <img src="images/star-half-empty.svg" width="13" height="13" alt="" class="reviews_star"> </div>
+                </div>
+            </div>
+            <!-- /.reviews_item -->
+        </div>
+        <!--/.container -->
+    </div>
+    <!-- /.reviews -->
+    <!-- news -->
+    <section class="news">
+        <div class="container">
+            <div class="news_header">
+                <h3 class="news_title">read me</h3>
+                <div class="news_text"> SOmetimes i write something smart</div>
+            </div>
+            <div class="articles">
+                <div class="articles_col">
+                    <div class="articles_item">
+                        <div class="articles_header">
+                            <time class="articles_date"> 10
+                                <br>june </time>
+                            <a href="#"> <img src="https://placehold.it/370x257" alt="" class="articles_photo"> </a>
+                        </div>
+                        <div class="articles_content">
+                            <h4 class="articles_title">
+                                <a href="#">something</a>
+                            </h4>
+                            <div class="articles_cat">CATTEGory</div>
+                            <div class="articles_text">
+                                <p>text texttext fdsfsd;bgasgm;lsdmgsdgkmsa;kdgms</p>
+                            </div>
+                        </div> <a href="" class="btn btn-sm">READ more</a> </div>
+                </div>
+                <div class="articles_col">
+                    <div class="articles_item">
+                        <div class="articles_header">
+                            <time class="articles_date"> 10
+                                <br>june </time>
+                            <a href="#"> <img src="https://placehold.it/370x257" alt="" class="articles_photo"> </a>
+                        </div>
+                        <div class="articles_content">
+                            <h4 class="articles_title">
+                                <a href="#">something</a>
+                            </h4>
+                            <div class="articles_cat">CATTEGory</div>
+                            <div class="articles_text">
+                                <p>text texttext fdsfsd;bgasgm;lsdmgsdgkmsa;kdgms</p>
+                            </div>
+                        </div> <a href="" class="btn btn-sm">READ more</a> </div>
+                </div>
+                <div class="articles_col">
+                    <div class="articles_item">
+                        <div class="articles_header">
+                            <time class="articles_date"> 10
+                                <br>june </time>
+                            <a href="#"> <img src="https://placehold.it/370x257" alt="" class="articles_photo"> </a>
+                        </div>
+                        <div class="articles_content">
+                            <h4 class="articles_title">
+                                <a href="#">something</a>
+                            </h4>
+                            <div class="articles_cat">CATTEGory</div>
+                            <div class="articles_text">
+                                <p>text texttext fdsfsd;bgasgm;lsdmgsdgkmsa;kdgms</p>
+                            </div>
+                        </div> <a href="" class="btn btn-sm">READ more</a> </div>
+                </div>
+            </div>
+            <!-- /.articles -->
+            <div class="news_footer"> <a class="news_link" href="#">See more post</a> </div>
+        </div><!--/.container -->
+    </section> <!--/.news -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer_inner">
+                <div class="footer_credits">
+
+                    <div class="footer_copyright"> &copy; 2020 Denis </div>
+
+                    <div class="footer_social">
+                        <a href="#" target="_blank">
+                            <img src="images/github-footer.svg" width="24" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/gmail-footer.svg" width="24" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/telegram-footer.svg" width="24" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/instagram-footer.svg" width="24" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/vk-footer.svg" width="24" alt="">
+                        </a>
+                    </div>
+
+                </div><!-- /.footer_credits -->
+
+                <nav class="footer_nav">
+                    <a class="footer_nav-link" href="#">Work</a>
+                    <a class="footer_nav-link" href="#">About me</a>
+                    <a class="footer_nav-link" href="#">Blog</a>
+                    <a class="footer_nav-link" href="#">Contact</a>
+                    <a class="footer_nav-link footer_nav-link-btn" href="#">Hire me</a>
+                </nav>
+
+            </div><!--/.footer_inner -->
+
+        </div><!-- /.container -->
+    </footer>
 </body>
+
 </html>
