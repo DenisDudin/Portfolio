@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Denis Dudin</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body class="no-scroll">
+<body>
    
     <!-- Header -->
     <header class="header">
@@ -24,7 +25,13 @@
                         <div class="user_prof">Веб-разработчик</div>
                     </div>
                 </div>
-                <nav class="nav"> <a class="nav_link" href="#">work</a> <a class="nav_link" href="#">about me</a> <a class="nav_link" href="#">blog</a> <a class="nav_link" href="#">contact</a> <a class="nav_link  nav_link-btn" href="#">hire me</a> </nav>
+                <nav class="nav"> 
+                    <a class="nav_link" href="#">work</a>
+                    <a class="nav_link" href="#">about me</a>
+                    <a class="nav_link" href="#">blog</a>
+                    <a class="nav_link" href="#">contact</a>
+                    <a class="nav_link  nav_link-btn" href="#" data-modal="#modal_hire_me">hire me</a>
+                </nav>
             </div>
         </div>
     </header>
@@ -52,8 +59,8 @@
                         <a class="social_link" href="#">
                             <img src="images/github.svg" widtx=25px height=25px alt="">
                         </a>
-                    </div> <a class="btn" href="#">HIRE ME</a>
-                    <button class="btn" type="button">SEE MY RESUME</button>
+                    </div> <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                    <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
                 </div> <img class="intro_photo" src="images/photo.png" alt=""> </div>
             <!-- /.intro__inner -->
         </div>
@@ -62,62 +69,47 @@
     <!-- Works -->
     <div class="works">
         <div class="container">
-            <div class="works_nav"> <a class="works_nav-link" href="#">All</a> <a class="works_nav-link" href="#">App</a> <a class="works_nav-link" href="#">Websites</a> <a class="works_nav-link" href="#">Interaction</a> </div>
+            <div class="works_nav">
+                <a class="works_nav-link" href="#" data-filter="all">Все</a>
+                <a class="works_nav-link" href="#" data-filter="app">Приложения</a>
+                <a class="works_nav-link" href="#" data-filter="website">Сайты</a>
+                <a class="works_nav-link" href="#" data-filter="under_development">В разработке</a>
+            </div>
             <div class="portfolio">
-                <div class="portfolio_col">
-                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
+                <div class="portfolio_col" data-cat="app">
+                    <div class="work" data-modal="#modal_project1"> <img class="work_image" src="https://placehold.it/370x300" alt="">
                         <div class="work_content">
-                            <div class="work_cat">category</div>
+                            <div class="work_cat">Приложение</div>
                             <div class="work_title"> Project title
                                 <time class="work_date" datetime="2019-11-22 19:00">2019</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio_col">
+                <div class="portfolio_col" data-cat="website">
                     <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
                         <div class="work_content">
-                            <div class="work_cat">category</div>
+                            <div class="work_cat">Сайт</div>
                             <div class="work_title"> Project title
                                 <time class="work_date" datetime="2019-11-22 19:00">2019</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio_col">
+                <div class="portfolio_col" data-cat="app">
                     <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
                         <div class="work_content">
-                            <div class="work_cat">category</div>
+                            <div class="work_cat">Приложение</div>
                             <div class="work_title"> Project title
                                 <time class="work__date" datetime="2019-11-22 19:00">2019</time>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio_col">
+                <div class="portfolio_col" data-cat="under_development">
                     <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
                         <div class="work_content">
-                            <div class="work_cat">category</div>
-                            <div class="work_title"> Project title
-                                <time class="work_date" datetime="2019-11-22 19:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio_col">
-                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
-                        <div class="work_content">
-                            <div class="work_cat">category</div>
-                            <div class="work_title"> Project title
-                                <time class="work_date" datetime="2019-11-22 19:00">2019</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio_col">
-                    <div class="work"> <img class="work_image" src="https://placehold.it/370x300" alt="">
-                        <div class="work_content">
-                            <div class="work_cat">category</div>
+                            <div class="work_cat">В разработке</div>
                             <div class="work_title"> Project title
                                 <time class="work_date" datetime="2019-11-22 19:00">2019</time>
                             </div>
@@ -126,7 +118,7 @@
                 </div>
             </div>
             <!-- /.portfolio -->
-            <div class="text-center"> <a class="btn  btn-sm" href="#">LOAD MORE WORK</a> </div>
+            <div class="text-center"> <a class="btn  btn-sm" href="#">загрузить больше работ</a> </div>
         </div>
         <!-- /.container -->
     </div>
@@ -137,7 +129,7 @@
             <div class="about_inner">
                 <div class="about_photo"> <img class="img" src="images/avatar.jpg" alt=""> </div>
                 <div class="about_content">
-                    <h3 class="about_title">ABOUT ME</h3>
+                    <h3 class="about_title">О себе</h3>
                     <h2 class="about_bigtitle">WHO AM I</h2>
                     <div class="about_text">
                         <p>Первый абзац и очень много текста</p>
@@ -269,7 +261,7 @@
                     <a class="footer_nav-link" href="#">About me</a>
                     <a class="footer_nav-link" href="#">Blog</a>
                     <a class="footer_nav-link" href="#">Contact</a>
-                    <a class="footer_nav-link footer_nav-link-btn" href="#">Hire me</a>
+                    <a class="footer_nav-link footer_nav-link-btn" href="#" data-modal="#modal_hire_me">Hire me</a>
                 </nav>
 
             </div><!--/.footer_inner -->
@@ -279,9 +271,9 @@
     
     
     <!-- Modals -->
-    <div class="modal" style="display: none">
+    <div class="modal" id="modal_project1">
         <div class="modal_dialog">
-            <button class="modal_close" type="button">
+            <button class="modal_close" type="button" data-close>
                 <img src="images/modal-close.svg" alt="Close">
             </button>
             
@@ -326,15 +318,15 @@
     </div> <!--/.modal -->
     
     
-    <div class="modal">
+    <div class="modal" id="modal_resume">
     <div class="modal_dialog">
 
-        <button class="modal_close" type="button">
+        <button class="modal_close" type="button" data-close>
             <img src="images/modal-close.svg" alt="Close">
         </button>
 
         <div class="modal_content">
-            <h3 class="modal_title">RESUME</h3>
+            <h3 class="modal_title" text-center>RESUME</h3>
 
             <div class="text-center">
                 <a class="btn btn-thin" href="#">DOWNLOAD PDF</a>
@@ -348,7 +340,7 @@
                     <div class="timeline_item">
                         <time class="timeline_date" datetime="11-21-2019">Февраль 2019 - Март 2019</time>
                         <h5 class="timeline_subtitle">IT-аудитор </h5>
-                        <div class="timeline_position">АО "M  azars"</div>
+                        <div class="timeline_position">АО "Mazars"</div>
                         <div class="timeline_text">
                             <p>
                                 <u>Обязанности:</u><br>
@@ -492,5 +484,52 @@
     </div><!-- /.modal__dialog -->
 </div><!-- /.modal -->
     
+
+<div class="modal" id="modal_hire_me">
+    <div class="modal_dialog  modal_dialog-sm">
+
+        <button class="modal_close" type="button" data-close>
+            <img src="images/modal-close.svg" alt="Close">
+        </button>
+
+        <div class="contact">
+            <div class="contact_left">
+                <h3 class="modal_title mb-0">LET'S TALK!</h3>
+                <h4 class="modal_subtitle">CALL ME OR SEND ME A REQUEST</h4>
+
+                <ul class="contact_info">
+                    <li class="contact_info-item">
+                        <img class="contact_info-icon" src="images/phone.svg" alt="">
+                        8 (999) 700 29-77
+                    </li>
+                    <li class="contact_info-item">
+                        <img class="contact_info-icon" src="images/mail.svg" alt="">
+                        denis.dudin.a@gmail.com
+                    </li>
+                </ul>
+
+                <form class="form" action="/" method="post">
+                    <div class="form_group">
+                        <label class="form_label" for="input-email">Adress e-mail</label>
+                        <input class="form_input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+                    </div>
+
+                    <div class="form_group">
+                        <label class="form_label" for="input-text">Request</label>
+                        <textarea class="form_textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn" type="submit">SEND</button>
+                    </div>
+                </form>
+            </div><!-- /.contact__left -->
+        </div><!-- /.contact -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+   
+<!-- JS -->
+    <script src="js/app.js"></script>
 </body>
 </html>
